@@ -1,0 +1,45 @@
+{
+    "model_path": "C:/Users/Ryan/bob_ai/data/models/mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "web_port": 5000,
+    "web_host": "0.0.0.0",
+    "enable_voice": true,
+    "enable_web": true,
+    "enable_scheduler": true,
+    "enable_cuda": true,
+    "data_dir": "C:/Users/Ryan/bob_ai/data",
+    "conversation_file": "C:/Users/Ryan/bob_ai/data/conversations.json",
+    "enhancements_dir": "C:/Users/Ryan/bob_ai/core/enhancements",
+    "system_prompt": "You are BOB AI, a helpful and intelligent assistant. You can assist with various tasks including coding, answering questions, and generating content.",
+    "model_parameters": {
+        "max_tokens": 200,
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repeat_penalty": 1.1
+    },
+    "voice_settings": {
+        "rate": 160,
+        "volume": 0.9,
+        "voice_id": 0
+    },
+    "cuda_settings": {
+        "n_gpu_layers": -1,
+        "n_batch": 512,
+        "offload_kqv": true,
+        "f16_kv": true,
+        "use_mlock": true
+    },
+    "database": {
+        "enabled": true,
+        "connection_string": "postgresql://postgres:postgres@localhost:5432/bob_ai",
+        "pool_size": 5,
+        "max_overflow": 10,
+        "pool_timeout": 30,
+        "pool_recycle": 1800
+    },
+    "logging": {
+        "level": "INFO",
+        "file_rotation": true,
+        "max_files": 5
+    }
+}
